@@ -137,6 +137,17 @@ footer a:hover{
 }
 
 @media only screen and (max-width : 760px){
+	h2{
+		padding: 17px 0 0;
+	}
+	h3{
+		padding: 0;
+	}
+	img{
+		margin-right: 5px;
+		width: 70px;
+		height: 70px;
+	}
 	header{
 		position: relative;
 		text-align: center;
@@ -155,8 +166,8 @@ footer a:hover{
 		margin-top: 100px;
 	}	
 	#privacy, #collection, #contact{
-		padding-right: 10%;
-		padding-left: 10%;
+		padding-right: 5%;
+		padding-left: 5%;
 	}
 }
 
