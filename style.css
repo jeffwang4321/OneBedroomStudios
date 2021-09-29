@@ -1,0 +1,164 @@
+/* All */
+:root {
+	--color-main: #15cbf9;
+	--color-sec: #b4effd;
+}
+*{
+	margin: 0px;
+  padding: 0px;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+	background-color:  #0d0d0d;
+	color: white;
+}
+
+h2{
+	color: var(--color-main);
+	padding: 17px 0 0;
+}
+h3{
+	padding: 20px 0 0;
+}
+img{
+	margin-right: 20px;
+	width: 70px;
+	height: 70px;
+}
+
+
+/* Header */
+header{
+	z-index: 1;
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 5px 4%;
+	width: 100%;
+	background-color: black;
+	box-shadow: 3px 3px 15px rgba(255,255,255,0.1);
+}
+header ul{
+	display: flex; 
+	list-style: none;
+}
+header ul li a{
+	text-decoration: none; 
+	margin: 0 15px;
+	color: white;
+}
+header ul li a:hover{
+	color: var(--color-main);
+}
+#headerLeft{
+	display: flex;
+}
+
+/* Privacy section*/
+#privacy{
+	padding: 150px 20% 0;
+}
+
+#collection, #contact{
+	padding: 100px 20% 0;
+}
+
+#privacy p, #collection p, #contact p{
+	margin: 5px 15px;
+}
+
+/* Sub Headers */
+.bxs-pin{
+	font-size: 30px;
+	color: var(--color-main);
+}
+
+#i{
+	color: var(--color-main);
+}
+
+p a{
+	color: var(--color-main);
+	text-decoration: none;
+}
+
+p a:hover{
+	color: white;
+}
+
+
+
+/* Footer section*/
+footer{
+	margin-top: 100px;
+	padding: 15px;
+	text-align: center;
+	background-color: black;
+	box-shadow: -3px -3px 15px rgba(255,255,255,0.1);
+}
+footer a, footer p{
+	color: white;
+	text-decoration: none;
+}
+.footer-links{
+	padding: 10px;
+}
+.footer-links a{
+	font-size: 30px;
+	padding: 15px;
+}
+footer a:hover{
+	color: var(--color-main);
+}
+#designed-by::after{
+	content: "© 2021 OBS All Rights Reserved";
+}
+#designed-by:hover::after{
+	content: "Designed by Jeff Wang";
+}
+
+/* Thin Scrollbar Effects */
+::-webkit-scrollbar {
+	width: 8px;
+}
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+	background: darkgrey;
+} 
+::-webkit-scrollbar-thumb:hover {
+	background: grey;
+}
+
+@media only screen and (max-width : 760px){
+	header{
+		position: relative;
+		text-align: center;
+		display: block;
+		padding: 10px 0;
+	}
+	ul{
+		display: flex; 
+		justify-content: space-around;
+	}
+	#headerLeft{
+		justify-content: center;
+	}
+	#privacy{
+		padding-top: 0;
+		margin-top: 100px;
+	}	
+	#privacy, #collection, #contact{
+		padding-right: 10%;
+		padding-left: 10%;
+	}
+}
+
+
+
